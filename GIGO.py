@@ -7,6 +7,14 @@ En otras palabras, la calidad de los resultados de un análisis estadístico o p
 Por lo tanto, en el análisis estadístico y la modelización probabilística, es esencial comenzar con datos de alta calidad y realizar procesos de limpieza y validación de datos para asegurar la confiabilidad de los resultados. La falta de atención a la calidad de los datos puede llevar a conclusiones erróneas o a interpretaciones incorrectas de los resultados estadísticos. Este principio refuerza la importancia de la integridad y la calidad de los datos en cualquier análisis cuantitativo.
 '''
 
+'''
+
+La aplicación del principio "Garbage in, garbage out" (GIGO) en un ejemplo de programación puede ser un poco abstracta, ya que generalmente implica la manipulación de conjuntos de datos más grandes y procesos más complejos. Sin embargo, puedo proporcionar un ejemplo simplificado que destaque la importancia de la calidad de los datos en el análisis estadístico.
+
+Supongamos que queremos realizar un análisis de correlación entre las horas de estudio y las calificaciones de los estudiantes. En este ejemplo, los datos estarán predeterminados y simularán situaciones en las que se introduzcan datos incorrectos o faltantes.
+
+'''
+
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -45,3 +53,17 @@ modelo.fit(X, y)
 print("Coeficiente de correlación:", np.corrcoef(X.flatten(), y.flatten())[0, 1])
 print("Coeficiente de regresión:", modelo.coef_[0, 0])
 print("Error cuadrático medio:", mean_squared_error(y, modelo.predict(X)))
+
+
+'''
+En este ejemplo:
+
+* Se simulan datos de horas de estudio y calificaciones, incluyendo un valor NaN para representar un dato faltante.
+
+* Se imprime el conjunto de datos original y después de la limpieza, donde las filas con valores faltantes son eliminadas.
+
+* Se utiliza el módulo sklearn para realizar un análisis de correlación y regresión lineal con los datos limpios.
+
+Este ejemplo resalta la importancia de la limpieza de datos para obtener resultados confiables en análisis estadísticos. Eliminar valores faltantes antes de realizar el análisis es una práctica esencial para evitar sesgos o interpretaciones incorrectas. La calidad de los datos de entrada impacta directamente en la calidad de los resultados obtenidos a través del análisis estadístico.
+
+'''
