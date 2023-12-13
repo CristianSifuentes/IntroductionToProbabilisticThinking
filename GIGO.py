@@ -14,6 +14,10 @@ La aplicación del principio "Garbage in, garbage out" (GIGO) en un ejemplo de p
 Supongamos que queremos realizar un análisis de correlación entre las horas de estudio y las calificaciones de los estudiantes. En este ejemplo, los datos estarán predeterminados y simularán situaciones en las que se introduzcan datos incorrectos o faltantes.
 
 '''
+'''
+pip install -U scikit-learn scipy matplotlib
+
+'''
 
 import pandas as pd
 import numpy as np
