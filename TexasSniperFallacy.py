@@ -7,3 +7,29 @@ Un ejemplo podría ser el siguiente: Supongamos que alguien revisa los registros
 
 En resumen, en probabilidad y estadística, es esencial establecer hipótesis a priori y realizar análisis de datos de manera rigurosa para evitar caer en la falacia del francotirador de Texas y obtener interpretaciones sesgadas o incorrectas.
 '''
+
+
+'''
+Supongamos que tenemos un conjunto de datos que representa el rendimiento de estudiantes en dos exámenes diferentes. Luego, decidimos analizar retrospectivamente el grupo de estudiantes que tuvo un rendimiento excepcional en ambos exámenes y buscar patrones específicos, como si hubieran usado bolígrafos de un color particular.
+'''
+
+import random
+
+# Simulación de datos de rendimiento de estudiantes
+random.seed(42)  # Establecer semilla para reproducibilidad
+num_estudiantes = 1000
+
+# Generar datos aleatorios de rendimiento en dos exámenes
+rendimiento_exam1 = [random.randint(70, 100) for _ in range(num_estudiantes)]
+rendimiento_exam2 = [random.randint(70, 100) for _ in range(num_estudiantes)]
+
+# Identificar el grupo de estudiantes con rendimiento excepcional en ambos exámenes
+grupo_destacado = [i for i in range(num_estudiantes) if rendimiento_exam1[i] > 90 and rendimiento_exam2[i] > 90]
+
+# Simulación de análisis retrospectivo en busca de patrones
+patron_boligrafos = ['rojo', 'azul', 'verde', 'negro']
+patron_encontrado = random.choice(patron_boligrafos)
+
+# Imprimir resultados
+print("Número de estudiantes en el grupo destacado:", len(grupo_destacado))
+print(f"Patrón retrospectivo encontrado: Los estudiantes usaron bolígrafos de color {patron_encontrado}.")
