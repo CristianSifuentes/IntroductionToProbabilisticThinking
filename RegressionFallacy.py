@@ -2,6 +2,11 @@
 Voy a proporcionarte un ejemplo simple para ilustrar la falacia de regresión utilizando datos simulados en Python. En este ejemplo, mostraré cómo la falacia de regresión puede ocurrir si nos basamos únicamente en la correlación sin comprender completamente el contexto.
 '''
 
+import warnings
+
+warnings.filterwarnings("error")
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
