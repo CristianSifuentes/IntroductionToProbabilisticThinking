@@ -1,3 +1,10 @@
+'''
+
+Claro, puedo mostrarte un ejemplo en Python donde calculamos la probabilidad de un evento 
+P(A) en un espacio muestral dado. Vamos a continuar con el ejemplo de lanzar tres monedas 
+y calcular la probabilidad de que al menos dos de ellas salgan cara.
+'''
+
 import itertools
 
 # Definir el espacio muestral para lanzar tres monedas
@@ -20,3 +27,12 @@ print("\nEvento - Al menos dos caras:")
 print(evento)
 
 print("\nProbabilidad del Evento P(A): {:.4f}".format(probabilidad_evento))
+
+'''
+En este ejemplo, utilizamos la función filter para obtener el conjunto de resultados que satisfacen el evento "al menos dos caras". 
+La probabilidad del evento se calcula dividiendo el número de resultados en el evento entre el tamaño total del espacio muestral.
+
+Recuerda que este es un ejemplo simple y con un espacio muestral finito. 
+En situaciones más complejas o con espacios muestrales infinitos, el cálculo de probabilidades puede requerir enfoques más avanzados, 
+como integrales en el caso continuo o técnicas de conteo más sofisticadas.
+'''
