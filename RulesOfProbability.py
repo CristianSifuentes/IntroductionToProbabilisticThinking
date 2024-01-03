@@ -1,3 +1,11 @@
+'''
+Claro, podemos extender el ejemplo anterior para incluir las reglas de la suma y del producto. En este caso, consideraremos dos eventos: 
+�
+A representando la ocurrencia de al menos dos caras en tres lanzamientos de monedas y 
+�
+B representando la ocurrencia de al menos una cara.
+'''
+
 import itertools
 
 # Definir el espacio muestral para lanzar tres monedas
@@ -34,3 +42,8 @@ print("Probabilidad del Evento B - Al menos una cara: {:.4f}".format(probabilida
 print("Probabilidad del Evento A ∩ B: {:.4f}".format(probabilidad_interseccion))
 print("Probabilidad del Evento A ∪ B (Regla de la Suma): {:.4f}".format(probabilidad_union))
 print("Probabilidad del Evento A ∩ B (Regla del Producto): {:.4f}".format(probabilidad_producto))
+
+'''
+En este ejemplo, calculamos las probabilidades de los eventos individuales 
+P(A) y P(B), la intersección P(A ∩ B), y luego aplicamos las reglas de la suma y del producto para obtener la probabilidad de la unión P(A∪B).
+'''
