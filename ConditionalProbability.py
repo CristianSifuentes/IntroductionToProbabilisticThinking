@@ -1,3 +1,7 @@
+'''
+Por supuesto, puedo mostrarte un ejemplo avanzado donde implementamos el concepto de probabilidad condicional. En este caso, continuaremos con el ejemplo de lanzar tres monedas, y queremos calcular la probabilidad condicional de que al menos una cara haya ocurrido, dado que ya sabemos que al menos dos caras han ocurrido.
+'''
+
 import itertools
 
 # Definir el espacio muestral para lanzar tres monedas
@@ -26,3 +30,9 @@ probabilidad_condicional = len(list(filter(al_menos_una_cara, evento_A))) / len(
 print("Probabilidad del Evento A - Al menos dos caras: {:.4f}".format(probabilidad_A))
 print("Probabilidad del Evento B - Al menos una cara: {:.4f}".format(probabilidad_B))
 print("Probabilidad Condicional P(B|A) - Al menos una cara dado que al menos dos caras han ocurrido: {:.4f}".format(probabilidad_condicional))
+
+
+'''
+En este ejemplo, calculamos las probabilidades de los eventos P(A) y P(B), y luego aplicamos la fórmula de probabilidad condicional 
+P(B∣A)= P(A ∩ B) / P(A) para encontrar la probabilidad de que al menos una cara haya ocurrido, dado que ya sabemos que al menos dos caras han ocurrido.
+'''
