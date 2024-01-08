@@ -1,3 +1,8 @@
+''''
+Claro, puedo proporcionarte un ejemplo avanzado donde implementamos el concepto de independencia de eventos. 
+En este caso, consideraremos dos eventos A y B, donde A representa obtener al menos dos caras en tres lanzamientos 
+de monedas, y B representa obtener al menos una cara.
+'''
 import itertools
 
 # Definir el espacio muestral para lanzar tres monedas
@@ -31,3 +36,10 @@ print("Probabilidad del Evento A - Al menos dos caras: {:.4f}".format(probabilid
 print("Probabilidad del Evento B - Al menos una cara: {:.4f}".format(probabilidad_B))
 print("Probabilidad de la Intersección P(A ∩ B): {:.4f}".format(probabilidad_interseccion))
 print("Verificar Independencia (P(A ∩ B) = P(A) * P(B)): {}".format(independencia))
+
+
+'''
+En este ejemplo, calculamos las probabilidades de los eventos 
+P(A) y P(B), la intersección P(A ∩ B), y luego verificamos la independencia según la fórmula 
+P(A ∩ B)= P(A) × P(B). Si esta igualdad se cumple, los eventos A y B son independientes.
+'''
