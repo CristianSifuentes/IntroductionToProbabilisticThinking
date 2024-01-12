@@ -1,3 +1,7 @@
+'''
+Claro, voy a proporcionarte un ejemplo avanzado en Python que implementa la distribución de probabilidad. En este caso, utilizaremos la distribución normal como ejemplo. La distribución normal es una de las distribuciones más comunes y se caracteriza por tener una forma de campana.
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
@@ -21,3 +25,9 @@ plt.title('Distribución Normal - Media: {}, Desviación Estándar: {}'.format(m
 plt.xlabel('Valor de la Variable Aleatoria')
 plt.ylabel('Densidad de Probabilidad')
 plt.show()
+
+'''
+En este ejemplo, utilizamos la biblioteca scipy.stats para crear una distribución normal con la media y la desviación estándar especificadas. Luego, generamos valores para la variable aleatoria y calculamos las probabilidades asociadas a cada valor utilizando la función de densidad de probabilidad (pdf). Finalmente, visualizamos la distribución de probabilidad normal mediante una curva.
+
+Este es solo un ejemplo con la distribución normal, pero el enfoque general para describir cómo se distribuyen las probabilidades entre los posibles valores de una variable aleatoria es aplicable a otras distribuciones de probabilidad también.
+'''
