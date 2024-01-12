@@ -1,3 +1,9 @@
+'''
+
+Claro, aquí tienes un ejemplo avanzado en Python que implementa el concepto de variables aleatorias. 
+En este caso, consideraremos una variable aleatoria que representa la suma de los resultados al lanzar dos dados.
+
+'''
 import matplotlib.pyplot as plt
 import itertools
 
@@ -18,3 +24,11 @@ plt.title('Distribución de la Variable Aleatoria - Suma de dos dados')
 plt.xlabel('Valor de la Variable Aleatoria')
 plt.ylabel('Frecuencia')
 plt.show()
+
+'''
+En este ejemplo, creamos un espacio muestral que representa todas las combinaciones posibles al lanzar dos dados. 
+Luego, definimos una variable aleatoria que asigna a cada resultado la suma de los dos dados. 
+Aplicamos esta variable aleatoria a cada elemento del espacio muestral y visualizamos la distribución de la variable aleatoria mediante un histograma.
+
+Este es un ejemplo básico, pero el concepto de variables aleatorias se aplica de manera más amplia a situaciones donde queremos asignar valores numéricos a los resultados de un experimento aleatorio para analizar su comportamiento.
+'''
