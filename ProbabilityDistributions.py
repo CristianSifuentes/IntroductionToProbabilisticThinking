@@ -1,3 +1,9 @@
+'''
+Claro, a continuación te proporciono un ejemplo en Python que implementa varias distribuciones de probabilidad comunes: uniforme, binomial, normal, exponencial y de Poisson.
+'''
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -53,3 +59,10 @@ axs[1, 1].set_title('Distribución de Poisson')
 # Ajustar la disposición de los subgráficos
 plt.tight_layout()
 plt.show()
+
+
+'''
+Este código genera datos aleatorios para cada una de las distribuciones mencionadas y luego crea subgráficos para visualizarlas. 
+
+Ajusta los parámetros según sea necesario para tu aplicación. Ten en cuenta que para la distribución binomial y de Poisson, he ajustado los bins para que coincidan con los posibles valores enteros que pueden tomar.
+'''
